@@ -11,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--bg-main);
+  font-family: var(--font-main);
 }
 
 .container {
@@ -22,7 +23,7 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border: 2px solid red;
   background: var(--bg-card);
@@ -35,7 +36,7 @@ body {
   align-items: flex-start;
   gap: 1rem;
   width: 100%;
-  margin: 20px 0;
+  margin-top: 20px;
 }
 
 .card-body img {
@@ -44,6 +45,8 @@ body {
 
 .card-thumbnail img {
   border-radius: 12px;
+  display: block;
+  width: 100%;
 }
 
 .card-details {
@@ -54,10 +57,14 @@ body {
 
 .card-details h3 {
   margin: 0;
+  font-size: 1.2rem;
+  color: var(--username);
 }
 
 .card-details p {
   margin: 10px 0;
+  font-size: 1.1rem;
+  color: #777474;
 }
 
 /* .card-stats {
@@ -67,4 +74,15 @@ body {
 /* hiding the likes  */
 .card:hover .card-stats {
   visibility: visible;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  width: 100%;
+}
+
+.card-stats li {
+  list-style-type: none;
 }
