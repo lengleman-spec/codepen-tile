@@ -10,6 +10,13 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--bg-main);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -17,15 +24,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 20px;
-  border: 3px solid var(--bg-card);
-  max-width: 500px;
+  border: 2px solid red;
+  background: var(--bg-card);
+  padding: 20px;
 }
 
 .card-body {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
+  gap: 1rem;
+  width: 100%;
 }
 
 .card-body img {
@@ -34,4 +43,9 @@ body {
 
 .card-thumbnail img {
   border-radius: 12px;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
 }
