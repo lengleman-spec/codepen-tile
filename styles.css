@@ -60,6 +60,11 @@ body {
   margin: 10px 0;
 }
 
-.card-avatar {
-  /* margin: 20px 0; */
+/* .card-stats {
+  visibility: hidden;
+} */
+
+/* hiding the likes  */
+.card:hover .card-stats {
+  visibility: visible;
 }
