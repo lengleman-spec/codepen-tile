@@ -32,9 +32,10 @@ body {
 .card-body {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   width: 100%;
+  margin: 20px 0;
 }
 
 .card-body img {
@@ -48,4 +49,17 @@ body {
 .card-details {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.card-details h3 {
+  margin: 0;
+}
+
+.card-details p {
+  margin: 10px 0;
+}
+
+.card-avatar {
+  /* margin: 20px 0; */
 }
