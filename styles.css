@@ -16,8 +16,22 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 30px 20px;
+  border: 3px solid var(--bg-card);
+  max-width: 500px;
 }
 
 .card-body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-body img {
+  border-radius: 22px;
+}
+
+.card-thumbnail img {
+  border-radius: 12px;
 }
