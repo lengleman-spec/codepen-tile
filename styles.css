@@ -25,9 +25,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border: 2px solid red;
   background: var(--bg-card);
-  padding: 20px;
+  padding: 20px 30px;
 }
 
 .card-body {
@@ -67,9 +66,9 @@ body {
   color: #777474;
 }
 
-/* .card-stats {
+.card-stats {
   visibility: hidden;
-} */
+}
 
 /* hiding the likes  */
 .card:hover .card-stats {
@@ -79,10 +78,16 @@ body {
 .card-stats {
   display: flex;
   justify-content: flex-start;
-  margin: 0;
+  gap: 1.2rem;
+  margin: 10px 0 0 0;
   width: 100%;
+  padding: 0 0 0 8px;
 }
 
 .card-stats li {
   list-style-type: none;
+  background-color: var(--bg-stats);
+  color: var(--username);
+  padding: 5px;
+  border-radius: 5px;
 }
